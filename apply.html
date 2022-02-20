@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply To Fine Art</title>
+    <link rel="icon" href="./images/title.png" type="image/png">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/dbb3746a29.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script defer src="index.js"></script>
+    <style>
+      body
+      {
+        background-image: url("https://images3.alphacoders.com/940/940326.jpg");
+      }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+        <img class="logo" src="./images/logo.png" alt="logo">
+        <a class="navbar-brand" href="#">Fine Art</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button> 
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ArtWorks</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Oil Paintings</a>
+                
+                <a class="dropdown-item" href="#">Sculpture</a>
+           
+                <a class="dropdown-item" href="#">Pencil Art</a>
+                <!-- <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
+            </li>
+      
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Artists</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Painters</a>
+                  <a class="dropdown-item" href="#">Sculptors</a>
+                  <a class="dropdown-item" href="#">Potrait Artists</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <button class="modal_btn" id="modal_btn"><i class="fas fa-sign-in-alt"></i></button>  
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+         
+        </div>
+      </nav> 
+      
+      
+      <div class="modal1" id="modal1">
+        <span class="far fa-times-circle close1" id="close1"></span>
+        <div class="modalcontent1">
+         
+          <div class="explorer">
+            <i class="far fa-user "></i> 
+             
+            <h4><b>I am an Art explorer</b></h4>
+            <p>Create an account to explore different art works</p>
+            <button id="create_account">Create an Account </i></button>
+            
+          </div>
+      
+          <div class="artist">
+            <i class="fas fa-palette "></i>
+            <h4><b>I am an artist</b></h4>
+            <p>You can enroll, and show your talent to the world</p>
+            <button id="apply-online">Enroll as an Artist </button>
+          </div>
+      
+        </div>
+      </div>
+      <div class="modal2" id="modal2">
+        <span class="far fa-times-circle close2" id="close2"></span>
+        <div class="modalcontent2" id="modalcontent2">
+            <form action="create.php" method="POST" class="form form--hidden" id="createAccount">
+                <h1 class="form_title">Create Account</h1>
+                <div class="form__message form__message--error"></div>
+                <div class="form__input-group">
+                    <input type="text" id="signupUsername" name="username" class="form_input" autofocus placeholder="Username">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="text" name="email" class="form_input" autofocus placeholder="Email Address">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" name="password" class="form_input" autofocus placeholder="Password">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password"  name="confirmpassword" class="form_input" autofocus placeholder="Confirm password">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <button class="form__button" type="submit">Continue</button>
+                <p class="form__text">
+                    <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+                </p>
+            </form>
+            <form action="authentication.php" method="POST" class="form" id="login">
+                <h1 class="form_title">Login</h1>
+                <div class="form__message form__message--error"></div>
+                <div class="form__input-group">
+                    <input type="text" name="username" class="form_input" autofocus placeholder="Username or email">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" name="password" class="form_input" autofocus placeholder="Password">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <button class="form__button" type="submit">Continue</button>
+                <p class="form__text">
+                    <a href="#" class="form__link">Forgot your password?</a>
+                </p>
+                <p class="form__text">
+                    <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+                </p>
+          </form>
+        </div>
+      </div> 
+
+      <div class="apply">
+        <button class="mt-3 apply_btn" id="apply_btn"><b>Apply Now</b></button>
+
+        <div class="question">
+          <div id="first" class="number mt-3">
+              <label for="fname" style="font-size:20px;">What is your First name?</label>
+              <input type="text" id="fname" name="fname"><br><br>
+              <button id="next1">next</button>
+          </div>
+          <div id="second" class="number mt-3">
+              <label for="lname"style="font-size:20px;">What is your Last name?</label>
+              <input type="text" id="lname" name="lname"><br><br>
+              <button id="prev2">prev</button>
+              <button id="next2">next</button>
+          </div>
+          <div id="third" class="number mt-3">
+              <label for="email"style="font-size:20px;">Enter your email:</label>
+              <input type="email" id="email" name="email"><br><br>
+              <button id="prev3">prev</button>
+              <button id="next3">next</button>
+          </div>
+          <div id="fourth" class="number mt-3">
+              <b>What is your phone number?</b><br>
+              <select name="countryCode" id="">
+                  <option data-countryCode="IN" value="91">India (+91)</option>
+                  <option data-countryCode="GB" value="44" Selected>UK (+44)</option>
+                  <option data-countryCode="US" value="1">USA (+1)</option>
+                  <optgroup label="Other countries">
+                      <option data-countryCode="DZ" value="213">Algeria (+213)</option>
+                      <option data-countryCode="AD" value="376">Andorra (+376)</option>
+                    <option data-countryCode="AO" value="244">Angola (+244)</option>
+                    <option data-countryCode="AI" value="1264">Anguilla (+1264)</option>
+                  </optgroup>
+                  <label for="phone">Enter a phone number:</label><br><br>
+                  <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+              </select><br><br>
+              <button id="prev4">prev</button>
+              <button id="next4">next</button>
+          </div>
+          <div id="fifth" class="number mt-3">
+              <p style="font-size:20px; font-family: Georgia, serif;"><b>Are You are a full time professional artist</b></p>
+                  <input type="radio" id="yes" name="answer" value="HTML">
+                  <label for="yes">YES</label><br>
+                  <input type="radio" id="no" name="answer" value="CSS">
+                  <label for="no">NO</label><br>
+              <button id="prev5">prev</button>
+              <button id="next5">next</button>
+          </div>
+          <div id="sixth" class="number mt-3">
+            <label for="quantity" style="font-size:20px; font-family: Georgia, serif;">Since how many years?</label>
+            <input type="number" id="quantity" name="quantity" min="1" ><br><br>
+            <button id="prev6">prev</button>
+            <button id="next6">next</button>
+          </div>
+          <div id="last" class="number mt-3">
+            <h3 style="font-family: algerian;font-size: 50px;">Thank you</h3>
+           <!-- <input id="submit_btn" type="submit" value="Submit"> -->
+           <button id="submit_btn" onclick="submitted()">Submit</button>
+           <a href="index.html"><button >Go To Home Page</button></a>
+          </div>
+        </div>
+    </div>
+
+ <script> 
+  
+document.getElementById("apply_btn").onclick= function(){
+  document.getElementById("first").style.display='block';
+  document.getElementById("apply_btn").style.display = 'none';
+}
+document.getElementById("next1").onclick= function(){
+  document.getElementById("second").style.display='block';
+  document.getElementById("first").style.display = 'none';
+}
+document.getElementById("prev2").onclick= function(){
+  document.getElementById("first").style.display='block';
+  document.getElementById("second").style.display = 'none';
+}
+document.getElementById("next2").onclick= function(){
+  document.getElementById("third").style.display='block';
+  document.getElementById("second").style.display = 'none';
+}
+document.getElementById("prev3").onclick= function(){
+  document.getElementById("second").style.display='block';
+  document.getElementById("third").style.display = 'none';
+}
+document.getElementById("next3").onclick= function(){
+  document.getElementById("fourth").style.display='block';
+  document.getElementById("third").style.display = 'none';
+}
+document.getElementById("prev4").onclick= function(){
+  document.getElementById("third").style.display='block';
+  document.getElementById("fourth").style.display = 'none';
+}
+document.getElementById("next4").onclick= function(){
+  document.getElementById("fifth").style.display='block';
+  document.getElementById("fourth").style.display = 'none';
+}
+document.getElementById("prev5").onclick= function(){
+  document.getElementById("fourth").style.display='block';
+  document.getElementById("fifth").style.display = 'none';
+}
+document.getElementById("next5").onclick= function(){
+  document.getElementById("sixth").style.display='block';
+  document.getElementById("fifth").style.display = 'none';
+}
+document.getElementById("prev6").onclick= function(){
+  document.getElementById("fifth").style.display='block';
+  document.getElementById("sixth").style.display = 'none';
+}
+document.getElementById("next6").onclick= function(){
+  document.getElementById("last").style.display='block';
+  document.getElementById("sixth").style.display = 'none';
+}
+
+function submitted()
+{
+  alert("Sumitted Successfully");
+}
+</script>
+  
+
+       
+</body>
+</html>

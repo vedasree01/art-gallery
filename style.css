@@ -1,0 +1,364 @@
+#bg{
+    background-image: linear-gradient(rgba(0, 0, 0, .3),rgba(0, 0, 0, .3)), url("Art image/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 20rem;
+    overflow: hidden;
+}
+
+#bg b{
+    color: white;
+    font-size: 20px;
+}
+
+.content{
+    position: absolute;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:aliceblue;
+    font-style: italic;
+    top: 13%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 90%;
+    left: 50%;
+    margin-left: -45%;
+    text-align: center;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+
+header {
+    width: 230px;
+    margin: 17rem auto;
+    font-size: 23px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    color: #333;
+    height: 30px;
+    padding-top: 5px;
+    font-weight: 800;
+    font-family: 'Dongle';
+    text-align: center;
+}
+.sculpture
+{
+    display: flex;
+    padding: 3%;
+}
+.sculpture1
+{
+    background-color: lightgray;
+}
+.sculpture .image{
+    border-radius: 100%;
+    border: 2px solid black;   
+}
+.sculpture img
+{
+    border:0.5vw solid black;
+    border-radius: 2%;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+.sculpture p{
+    font-weight: bold;
+    padding-left: 15%;
+}
+.col{
+    padding: 2%;
+}
+
+
+
+.artist{
+    padding-left: 35%;
+}
+
+.subscription{
+    text-align: center;
+    box-sizing: border-box;
+}
+.submit-button
+{
+    margin-top: 5%;
+    text-align: center;
+}
+.submit-button button{
+
+    color: white;
+    background-color: brown;
+    border: none;
+    outline: none;
+    width: 17%;
+    height : 30px;
+    font-weight: bold;
+    
+}
+
+.other-artworks{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 50px;
+    text-decoration: underline;
+}
+
+.first-image{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    max-width: 200%;
+    align-content: center;
+    width: auto;
+    height: auto;
+}
+
+.sculp1{
+    justify-content: center;
+    display: flex;
+    background: transparent;
+    position: relative;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.info{
+    margin-right: 10px;
+    margin-left: 25%;
+} 
+
+.info h2{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: cursive;
+}
+.info h3{
+    font-size: 19px;
+}
+
+.info b{
+    font-size: 20px;
+}
+
+.dimensions{
+    margin: 0 12% 0 12%;
+}
+
+.artists{
+    text-align: center;
+    font-family: cursive;
+}
+
+.artist-info{
+    display: flex;
+}
+
+.artist-img{
+    margin: 20px;
+    width : 150px;
+    border: 2px solid black;
+}
+
+.artist-heading{
+    padding-left: 5%;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-artist{
+    padding-left: 5%;
+    padding-right: 7%;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bg-image{
+    background-image: linear-gradient(rgba(180, 161, 161, 0.3),rgba(218, 199, 199, 0.3)), url("Art image/3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1700px 1200px;
+}
+
+ .payment {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:lightgrey;
+    font-size: 0.8rem
+}
+
+.card {
+    max-width: 1000px;
+    margin: 2vh
+}
+
+.card-top {
+    padding: 0.7rem 5rem
+}
+
+.card-top a {
+    float: left;
+    margin-top: 0.7rem
+}
+
+#logo {
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    font-size: 1.6rem
+}
+
+.card-body {
+    padding: 0 5rem 5rem 5rem;
+    background-image: url("https://i.imgur.com/4bg1e6u.jpg");
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+@media(max-width:768px) {
+    .card-body {
+        padding: 0 1rem 1rem 1rem;
+        background-image: url("https://i.imgur.com/4bg1e6u.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
+    .card-top {
+        padding: 0.7rem 1rem
+    }
+}
+
+.row {
+    margin: 0
+}
+
+.upper {
+    padding: 1rem 0;
+    justify-content: space-evenly
+}
+
+#three {
+    border-radius: 1rem;
+    width: 22px;
+    height: 22px;
+    margin-right: 3px;
+    border: 1px solid blue;
+    text-align: center;
+    display: inline-block
+}
+
+#payment {
+    margin: 0;
+    color: blue
+}
+
+.icons {
+    margin-left: auto
+}
+
+form span {
+    color: rgb(179, 179, 179)
+}
+
+form {
+    padding: 2vh 0
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247)
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+.header {
+    font-size: 1.5rem
+}
+
+.left {
+    background-color: #ffffff;
+    padding: 2vh
+}
+
+.left img {
+    width: 2rem
+}
+
+.left .col-4 {
+    padding-left: 0
+}
+
+.right .item {
+    padding: 0.3rem 0
+}
+
+.right {
+    background-color: #ffffff;
+    padding: 2vh
+}
+
+.col-8 {
+    padding: 0 1vh
+}
+
+.lower {
+    line-height: 2
+}
+
+.btn {
+    background-color: rgb(23, 4, 189);
+    border-color: rgb(23, 4, 189);
+    color: white;
+    width: 100%;
+    font-size: 0.7rem;
+    margin: 4vh 0 1.5vh 0;
+    padding: 1.5vh;
+    border-radius: 0
+}
+
+.btn:focus {
+    box-shadow: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    -webkit-box-shadow: none;
+    -webkit-user-select: none;
+    transition: none
+}
+
+.btn:hover {
+    color: white
+}
+
+a {
+    color: black
+}
+
+a:hover {
+    color: black;
+    text-decoration: none
+}
+
+input[type=checkbox] {
+    width: unset;
+    margin-bottom: unset
+}
+
+#cvv {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.575), rgba(255, 255, 255, 0.541)), url("https://img.icons8.com/material-outlined/24/000000/help.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center
+}
+ 
